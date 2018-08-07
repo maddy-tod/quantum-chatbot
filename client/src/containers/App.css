@@ -1,0 +1,155 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #562f72;
+}
+
+a {
+    color: #323232;
+}
+
+p {
+    margin-bottom: 1em;
+    font-weight: 200;
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  /* flex: 1; would be enough but it looks bad in IE */
+  flex: 1 0 auto;
+}
+
+/* Unimportant part */
+body {
+ font-family: "Helvetica Neue",Helvetica,"Open Sans",Arial,"Lucida Grande",Roboto,sans-serif;
+ font-size: 12px;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+header, section, footer {
+  padding: .5em .5em;
+  color: white;
+}
+
+header {
+  text-align: center;
+  background-color: #323232;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 200;
+}
+
+section {
+    overflow: auto;
+    height: 70vh;
+  background-color: #ffffff;
+}
+
+footer {
+  background-color: #f4f4f4;
+  color: #562f72;
+}
+
+.user-msg,
+.watson-msg {
+  font-size: 11pt;
+  color: #323232;
+  background-color: #00b4a0; /*#fef9fb;*/
+  border-radius: 20px;
+  margin: 0 5px 10px;
+  padding: 10px 15px;
+  position: relative;
+  clear: both;
+  line-height: 1em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  position: relative;
+}
+
+.user-msg {
+  color: #fff;
+  border-bottom-right-radius: 0;
+  float: right;
+}
+
+.user-msg:after {
+   border-color: transparent #00b4a0 transparent transparent;
+   border-style: solid;
+   border-width: 0 15px 8px 0;
+   bottom: -7px;
+   content: ' ';
+   height: 0;
+   position: absolute;
+   right: 0;
+   width: 0;
+ }
+
+.watson-msg {
+  border-bottom-left-radius: 0;
+  float: left;
+  background-color: #e7e9ec;
+}
+
+.watson-msg:after {
+   border-color: transparent transparent transparent #e7e9ec;
+   border-style: solid;
+   border-width: 0 0 8px 15px;
+   bottom: -7px;
+   content: ' ';
+   height: 0;
+   position: absolute;
+   left: 0;
+   width: 0;
+ }
+
+input {
+  box-sizing:border-box;
+  flex: 1;
+  width: 100%;
+  font-size: 1em;
+  background-color: transparent;
+  color: #323232;
+  border: solid #562f72 1px;
+  border-radius: 20px;
+  padding: 8px 10px;
+}
+
+@media (min-width: 600px) {
+
+    #root {
+        height: 100%;
+        border-left: 1px dashed rgba(0,0,0,.2);
+        border-right: 1px dashed rgba(0,0,0,.2);
+        margin-left: auto;
+        max-width: 500px;
+        margin-right: auto;
+    }
+}
