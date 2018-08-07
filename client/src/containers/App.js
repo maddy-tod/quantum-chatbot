@@ -64,6 +64,14 @@ class App extends Component {
             { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
             <div className="watson-msg"><LabsCard park={exchange.output.lab}/></div>
           </div>);
+      case 'joke':
+        alert("?!!!!!!!?");
+        return (
+          <div key={key} className="exchange">
+            { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
+            { exchange.output.joke.q ? <div key="0"className="watson-msg">{exchange.output.joke.q}</div> : null }
+            { exchange.output.joke.a ? <div key="1"className="watson-msg">{exchange.output.joke.a}</div> : null }
+          </div>);
       default:
         alert("???????????");
         this.renderText(exchange,key);

@@ -1,6 +1,5 @@
 import React from 'react';
 import './ParkCard.css';
-import Carousel from './Carousel';
 
 export const LabsCard = ({
   lab
