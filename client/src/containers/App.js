@@ -51,14 +51,15 @@ class App extends Component {
             <div className="watson-msg"><LabsCard lab={exchange.output.lab}/></div>
           </div>);
       case 'joke':
+       // jokes q and a are comma separated
+        var arr = exchange.output.text[0].split(",");
         return (
           <div key={key} className="exchange">
             { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
-            { exchange.output.joke.q ? <div key="0"className="watson-msg">{exchange.output.joke.q}</div> : null }
-            { exchange.output.joke.a ? <div key="1"className="watson-msg">{exchange.output.joke.a}</div> : null }
+            { exchange.output.text ? <div key="0"className="watson-msg">{arr[0]}</div> : null }
+            { arr[1] ? <div key="1"className="watson-msg">{arr[1]}</div> : null }
           </div>);
       default:
-        alert("????????");
         this.renderText(exchange,key);
     }
   }
