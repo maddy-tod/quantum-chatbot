@@ -51,8 +51,8 @@ class App extends Component {
             <div className="watson-msg"><LabsCard lab={exchange.output.lab}/></div>
           </div>);
       case 'joke':
-       // jokes q and a are comma separated
-        var arr = exchange.output.text[0].split(",");
+       // jokes q and a are / separated
+        var arr = exchange.output.text[0].split("/");
         return (
           <div key={key} className="exchange">
             { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
