@@ -1,4 +1,4 @@
-import ParksDatabase from '../parks';
+import LabsDatabase from '../labs';
 
 export default function discourseHandler(r) {
 
@@ -51,9 +51,9 @@ export default function discourseHandler(r) {
 
   switch (r.intents[0].intent) {
     case 'tellmeabout' :
-      const lab = r.context.lab;
+      const lab = LabsDatabase.byName(r.context.lab);
       if(lab){
-        r.output.lab = "WOOHOO THIS WORKED";
+        r.output.lab = lab;
       }
       return r;
 

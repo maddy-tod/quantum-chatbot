@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Yorktown",
+    "images": [
+      "http://www.research.ibm.com/labs/watson/images/big-ykt.jpg"
+    ],
+    "website": "http://www.research.ibm.com/labs/watson/",
+    "established": {
+      "date": "1961",
+      "description": "The Yorktown lab houses industry- leading facilities for advancing science and technology including: an IBM Q lab where researchers are pioneering quantum computing. It is the headquaters of IBM research"
+    }
+  },
+
+  {
+    "name": "Austin",
+    "images": [
+      "http://www.research.ibm.com/labs/austin/images/locations.jpg"
+    ],
+    "website": "http://www.research.ibm.com/labs/austin/",
+    "established": {
+      "date": "October 1995",
+      "description": "Austin is one of 12 IBM research laboratories worldwide. Scientists, designers, engineers, developers and other experts work together in the lab on a variety of focus areas including hardware development, software development, quantum computing and advancements in cognitive computing and AI."
+    }
+  },
+
+  {
+    "name": "Tokyo",
+    "images": [
+      "http://www.research.ibm.com/labs/tokyo/images/locations.jpg"
+    ],
+    "website": "http://www.research.ibm.com/labs/tokyo/",
+    "established": {
+      "date": "1992",
+      "description": "Tokyo focuses on innovations that use cognitive computing to solve social and industry problems through expertise in cognitive device technologies, text analytics and mathematical science technologies. They are also home to one of IBM's quantum computers. "
+    }
+  }
+]

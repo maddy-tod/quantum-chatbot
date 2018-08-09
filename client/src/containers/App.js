@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Conversation from '../services/conversation';
 import ParkCard from '../components/ParkCard';
-import AnimalsCard from '../components/AnimalsCard';
-import PlantsCard from '../components/PlantsCard';
 import LabsCard from '../components/LabsCard'
 import './App.css';
 
@@ -46,26 +44,13 @@ class App extends Component {
             { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
             <div className="watson-msg"><ParkCard park={exchange.output.park}/></div>
           </div>);
-      case 'animals':
-        return (
-          <div key={key} className="exchange">
-            { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
-            <div className="watson-msg"><AnimalsCard park={exchange.output.park}/></div>
-          </div>);
-      case 'plants':
-        return (
-          <div key={key} className="exchange">
-            { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
-            <div className="watson-msg"><PlantsCard park={exchange.output.park}/></div>
-          </div>);
       case 'labs':
         return (
           <div key={key} className="exchange">
             { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
-            <div className="watson-msg"><LabsCard park={exchange.output.lab}/></div>
+            <div className="watson-msg"><LabsCard lab={exchange.output.lab}/></div>
           </div>);
       case 'joke':
-        alert("?!!!!!!!?");
         return (
           <div key={key} className="exchange">
             { exchange.input.text ? <div className="user-msg">{exchange.input.text}</div> : null }
@@ -73,7 +58,7 @@ class App extends Component {
             { exchange.output.joke.a ? <div key="1"className="watson-msg">{exchange.output.joke.a}</div> : null }
           </div>);
       default:
-        alert("???????????");
+        alert("????????");
         this.renderText(exchange,key);
     }
   }
