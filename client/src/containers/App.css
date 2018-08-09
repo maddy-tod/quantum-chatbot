@@ -146,7 +146,6 @@ input {
 }
 
 @media (min-width: 600px) {
-
     #root {
         height: 100%;
         border-left: 1px dashed rgba(0,0,0,.2);
