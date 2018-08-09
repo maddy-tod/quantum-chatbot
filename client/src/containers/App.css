@@ -5,11 +5,14 @@ html {
 body {
   height: 100%;
   width: 100vw;
+  background-image:  url(
+    "https://raw.githubusercontent.com/AkashGutha/Qiskit-Snippets/master/assets/qiskit.gif");
+  background-color: #000000;
 }
 
 h3 {
-    font-size: 1.2em;
-    font-weight: 400;
+    font-size: 2em;
+    font-weight: 500;
     color: #562f72;
 }
 
@@ -40,7 +43,7 @@ section {
 /* Unimportant part */
 body {
  font-family: "Helvetica Neue",Helvetica,"Open Sans",Arial,"Lucida Grande",Roboto,sans-serif;
- font-size: 12px;
+ font-size: 14px;
 }
 
 p {
@@ -62,8 +65,8 @@ header {
 
 section {
     overflow: auto;
-    height: 70vh;
-  background-color: #ffffff;
+    height: 100%;
+    background-color: #ffffff;
 }
 
 footer {
@@ -73,7 +76,7 @@ footer {
 
 .user-msg,
 .watson-msg {
-  font-size: 11pt;
+  font-size: 14pt;
   color: #323232;
   background-color: #00b4a0; /*#fef9fb;*/
   border-radius: 20px;
@@ -133,7 +136,7 @@ footer {
 input {
   box-sizing:border-box;
   flex: 1;
-  width: 100%;
+  width:100%;
   font-size: 1em;
   background-color: transparent;
   color: #323232;
@@ -149,7 +152,7 @@ input {
         border-left: 1px dashed rgba(0,0,0,.2);
         border-right: 1px dashed rgba(0,0,0,.2);
         margin-left: auto;
-        max-width: 500px;
+        width: 35%;
         margin-right: auto;
     }
 }
